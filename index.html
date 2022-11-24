@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliana Diaz Mansilla</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="description" content="JULIANA DIAZ MANSILLA">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- En esta parte desarrollaremos el Navbar-->
+<nav class="Navbar">
+    <div class="image">
+        <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1WXANNhF7sLLdBfrLy-HaIlHqtaNCGJ5q4coYiCy&s" alt="Mafalda">
+    </div>
+    
+    <div class="desktop">
+        <ul class="menu">
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile">
+        <label for="hamburger-input">Menu</label>
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+          <ul class="menu">
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <div class="overlay"></div>
+        </label>
+      </div>
+</nav>
+<!-- Final del Navbar -->
+
+<!-- En esta parte desarrollaremos el Header -->
+<header class="header">
+    <picture class="image-heade">
+      <img
+        sizes="(max-width: 300px) 100vw, 300px"
+        srcset="
+        images/header/mafalda.jpg 300w"
+        src="images/header/mafalda.jpg"
+        alt=""
+      >
+    </picture>
+    <div class="picture-text">
+      <h1>Juliana Portfolio</h1>
+    </div>
+  </header>
+<!-- Fin del Header -->
+
+<!-- Parte Main -->
+<main class="main">
+    <section class="introduction">
+      <h1>Juliana Díaz Mansilla</h1>
+      <p>Nací en Bogotá, Colombia y viví alli hasta mi adolescencia. 
+      En el año 2002 empecé una nueva aventura, todo empezó cuando me trasladé junto a 
+      mi familia a vivir a España. Actualmente llevo más años viviendo aquí que allí, 
+      ésta mezcla de culturas me ha permitido valorar lo que cada país me aporta. 
+      Estos cambios y las ganas de viajar, aprender y conocer me han permitido tener estancias en 
+      Cánada e Inglaterra, experiencias que abren tu mente.
+  
+      Estudié Ciencias Políticas en la Universidad Complutense, elegí esta carrera porque me gusta mucho el 
+      análisis político. Ahora quierodar un giro a mi carrera y estoy explorando el mundo de la Programación 
+      y el Marketing Digital. </p>
+    </section>
+    
+    
+    <section id="skills" class="skills">
+      <h2>Mis skills</h2>
+      <div class="slist">
+        <div class="skill">
+          HTML
+          <div class="progreess">
+            <div class="pbar move-pbar w15">
+
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          CSS
+          <div class="progreess">
+            <div class="pbar move-pbar w75">
+
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          PYTHON
+          <div class="progreess">
+            <div class="pbar move-pbar w50">
+
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          SQL
+          <div class="progreess">
+            <div class="pbar move-pbar w100">
+
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          TABLEAU
+          <div class="progreess">
+            <div class="pbar move-pbar w15">
+
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          JAVA
+          <div class="progreess">
+            <div class="pbar move-pbar w50">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- Fin del Main -->
+
+  <!-- Form -->
+  <form class="main-form" action="/contact" method="post">
+    
+    <div class="input-text">
+
+      <!-- Nombre -->
+      <div class="form-group">
+        <label class="text-label" for="name">Nombre</label>
+        <input required type="text" id="name" name="name" placeholder="Pon tu nombre">
+      </div>
+
+      <!-- Apellido -->
+      <div class="form-group">
+        <label class="text-label" for="surname">Apellido</label>
+        <input placeholder="Pon tu apellido" required type="text" name="text" id="surname">
+      </div>
+
+      <!-- Movil/telefono -->
+      <div class="form-group">
+        <label class="text-label" for="phone">Móvil</label>
+        <input
+          required
+          placeholder="Número de Móvil"
+          id="phone"
+          type="tel"
+          name="phone"
+          pattern="[0-9]+"
+        >
+      </div>
+
+      <!-- Github -->
+      <div class="form-group">
+        <label class="text-label" for="githubTag">Github username</label>
+        <input
+          required
+          id="githubTag"
+          type="text"
+          name="githubTag"
+          pattern="^@[^\s]+"
+          placeholder="Con este formato (@<username>)"
+        >
+      </div>
+    </div>
+
+    <!-- Informacion extra - seleccion -->
+    <div class="form-group">
+      <p class="text-label">¿Donde me conociste?</p>
+      
+      <div class="radio-group">
+        <label for="university">Universidad </label>
+        <input required type="radio" name="contact" id="university" value="university">
+      </div>
+      
+      <div class="radio-group">
+        <label for="voluntariado">Voluntariado </label>
+        <input required type="radio" name="contact" id="voluntariado" value="voluntariado">
+      </div>
+      
+      <div class="radio-group">
+        <label for="school">Colegio </label>
+        <input required type="radio" name="contact" id="school" value="school">
+      </div>
+      
+      <div class="radio-group">
+        <label for="github">Github </label>
+        <input required type="radio" name="contact" id="github" value="github">
+      </div>
+    </div>
+
+    <!-- Mas informacion  -->
+    <div class="form-group">
+      <label class="text-label" for="moreInfo">Más información</label>
+      <textarea required name="moreInfo" id="moreInfo" maxlength="180" placeholder="Que mas quieres saber" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- Boton de enviar -->
+    <div>
+      <button class="btn" type="submit">Enviar</button>
+    </div>
+  </form>
+  <!-- Fin del Form -->
+
+  <!-- Footer -->
+  <footer id="contacto" class="footer main-bg">
+    <div class="instg">
+      <a class="link" href="https://www.instagram.com/mafaldadigital/?hl=en" target="_blank" rel="noopener noreferrer">
+        <svg class="instagram" stroke="none" viewBox="0 0 32 32">
+          <path d="M22.6 0h-13C4.3 0 0 4.3 0 9.5v13C0 27.7 4.3 32 9.5 32h13c5.2 0 9.5-4.3 9.5-9.5v-13c.1-5.2-4.2-9.5-9.4-9.5zm6.3 22.6c0 3.5-2.8 6.3-6.3 6.3h-13c-3.5 0-6.3-2.8-6.3-6.3V9.5c0-3.5 2.8-6.3 6.3-6.3h13c3.5 0 6.3 2.8 6.3 6.3v13.1z"></path>
+          <path d="M16.1 7.8c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.8-8.3-8.3-8.3zm0 13.4c-2.8 0-5.1-2.3-5.1-5.1s2.3-5.1 5.1-5.1 5.1 2.3 5.1 5.1-2.3 5.1-5.1 5.1z"></path><circle cx="24.4" cy="7.8" r="2"></circle>
+        </svg>
+      </a>  
+    </div>
+  </footer>
+  <!-- Fin del  Footer -->
+
+
